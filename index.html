@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SkyCast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://openweathermap.org" />
+  <link rel="preconnect" href="https://upload.wikimedia.org" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="sunny">
+  <div class="container">
+    <h1>SkyCast</h1>
+
+    <div class="search-row">
+      <input type="text" id="cityInput" placeholder="Type city, state, country (e.g., Agra, Uttar Pradesh, IN)" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <!-- City photo banner (hidden until search) -->
+    <div id="photoWrap">
+      <img id="placePhoto" alt="Place photo">
+      <div id="photoCaption">
+        <div id="photoPlace"></div>
+        <div id="photoTitle"></div>
+      </div>
+    </div>
+
+    <!-- Weather results (hidden until search) -->
+    <section id="results" aria-live="polite">
+      <div class="current">
+        <img id="weatherIcon" alt="Weather Icon" />
+        <div>
+          <h2 id="cityName">City Name</h2>
+          <p id="localTime">Local Time: --</p>
+          <p id="temperature">Temperature: -- °C</p>
+          <p id="description">Weather: --</p>
+          <p id="humidity">Humidity: -- %</p>
+          <p id="wind">Wind Speed: -- m/s</p>
+          <p id="weatherTip"></p>
+        </div>
+      </div>
+
+      <h3>Next 5 Days Forecast</h3>
+      <div id="forecastContainer"></div>
+    </section>
+
+    <div class="footer">
+      <p>Made by: Prabhakar Mishra💓</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
